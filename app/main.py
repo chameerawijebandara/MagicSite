@@ -9,11 +9,14 @@ def createFiles(files):
 	for file in files:
 		open(file, 'a').close()
 
-folders = {"build/public", "build/src"}	
-files = {"build/index.md"}
+def createFolderStructure():
+	folders = {"build/public", "build/src"}	
+	files = {"build/index.md"}
 
-createFolders(folders)	
-createFiles(files)
+	createFolders(folders)	
+	createFiles(files)
+	
+createFolderStructure()	
 	
 
 
