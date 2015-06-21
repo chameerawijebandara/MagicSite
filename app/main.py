@@ -1,24 +1,10 @@
-import os
+import magicsite
 
-def createFolders(folders):
-	for folder in folders:
-		if not os.path.exists(folder):
-			os.makedirs(folder)
-			
-def createFiles(files):
-	for file in files:
-		open(file, 'a').close()
+def main():
+     m = magicsite.MagicSite();
+     m.boostreap();
 
-def createFolderStructure():
-	folders = {"build/public", "build/src"}	
-	files = {"build/index.md"}
-
-	createFolders(folders)	
-	createFiles(files)
+if __name__ == "__main__":
+    main()
 	
-createFolderStructure()	
 	
-
-
-
-
